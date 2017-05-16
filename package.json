@@ -14,7 +14,9 @@
   "author": "Roly Fentanes (https://github.com/fent)",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "istanbul cover node_modules/.bin/_mocha -- -R spec test/*-test.js"
+    "test": "istanbul cover node_modules/.bin/_mocha -- -R spec test/*-test.js",
+    "test-win": "mocha test/*-test.js --compilers js:babel-core/register",
+    "test-rex": "mocha test/rexyan-test.js --compilers js:babel-core/register"
   },
   "directories": {
     "lib": "./lib"
